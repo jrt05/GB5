@@ -96,13 +96,6 @@ void GFXs::setGraphicsMode(int mode) {
             currentGraphicsMode = BILINEAR;
         }
     }
-
-    /*
-    if (!SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "1")) {
-    Logger::LogOut.logstream << Time::getTimeString << " Warning: Linear texture filtering not enabled.\n";
-    // print warning here
-    }
-    */
 }
 
 bool GFXs::isGraphicsModeSet(int mode) {
