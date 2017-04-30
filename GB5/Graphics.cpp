@@ -3,6 +3,7 @@
 #include "Logger.h"
 #include "Time.h"
 #include "resource.h"
+#include "Globals.h"
 
 #include <SDL.h>
 #include <SDL_opengl.h>
@@ -44,7 +45,7 @@ void GFXs::create() {
     }
 
     // Create window
-    window = SDL_CreateWindow("GB5 - v00.00.01", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
+    window = SDL_CreateWindow("GB5 - " GB5VERSION, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
         SCREEN_WIDTH * SCALE, SCREEN_HEIGHT * SCALE,
         SDL_WINDOW_SHOWN);
 

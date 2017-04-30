@@ -83,7 +83,7 @@ void StateManager::update() {
             }
             states[GAME]->redoTexture();
         }
-
+        // Loading a rom
         if (input->load_pressed()) {
             std::wstring filepath = openDialog();
             if (filepath.compare(L"") != 0) {
@@ -92,6 +92,7 @@ void StateManager::update() {
             }
         }
 
+        // Changed size
         if (input->small_pressed()) {
             if (graphics->getScale() != graphics->SMALL) {
                 graphics->setScale(graphics->SMALL);
